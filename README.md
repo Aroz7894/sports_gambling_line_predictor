@@ -4,7 +4,8 @@ This project calls an api to retirve past and current betting odds from multiple
 ## Notes: 
 This project is written in Python and utilizes the fast ai packages to train the model. 
 ###### API Notes
-- [The odds api](https://the-odds-api.com/liveapi/guides/v4/#overview) 
+- [The odds api](https://the-odds-api.com/liveapi/guides/v4/#overview)
+ - API KEY: 2e8ee9c554ecabfed1f064d76c8fbaa6
 - [Historical Api data](https://the-odds-api.com/historical-odds-data/#how-to-access-historical-odds-data)
 
 ###### Notes on Model Prediction
