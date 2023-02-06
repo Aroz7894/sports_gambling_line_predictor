@@ -1,0 +1,1 @@
+ODDS_API_URL = 'https://api.the-odds-api.com/v4/sports/{sport}/odds/?apiKey={token}&regions={regions}'
