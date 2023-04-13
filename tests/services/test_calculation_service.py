@@ -1,5 +1,5 @@
 import pytest
-from python.module.expected_value_calculator import convert_amer_odds_to_decimal, calculate_expected_value, profit_calculator
+from python.module.services.calculation_service import convert_amer_odds_to_decimal, calculate_expected_value, profit_calculator
 
 
 def test_convert_amer_odds_to_decimal():
