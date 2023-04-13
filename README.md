@@ -9,6 +9,7 @@ This project is written in Python and utilizes the fast ai packages to train the
 - [Historical Api data](https://the-odds-api.com/historical-odds-data/#how-to-access-historical-odds-data)
 
 ###### Notes on Model Prediction
+- Will focus on 1 sport, baseball, for now and only predict h2h matchups. 
 - Predict moneyline and/or spread?
 - Possible features:
 1. Record over previous 3 years
