@@ -1,6 +1,7 @@
 import requests
 from module.constants import ODDS_API_URL
 from module.models.request_param import RequestParams
+from module.services.caching_service import cache_response
 
 
 def call_api_handler() -> dict:
@@ -8,6 +9,7 @@ def call_api_handler() -> dict:
     return call_api(ODDS_API_URL, request_params)
 
 
+@cache_response
 def call_api(base_url: str, params: RequestParams) -> dict: 
     retry = 0
     result = ''
@@ -16,7 +18,6 @@ def call_api(base_url: str, params: RequestParams) -> dict:
         while retry < 3:        
             response = requests.get(url)
             if response.status_code != 200:
-                print(response.status_code)
                 retry += 1
             else: 
                 result = response.json()
